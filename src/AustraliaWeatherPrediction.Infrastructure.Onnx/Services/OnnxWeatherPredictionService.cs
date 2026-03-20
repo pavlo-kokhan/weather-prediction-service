@@ -36,7 +36,7 @@ public class OnnxWeatherPredictionService : IWeatherPredictionService, IDisposab
         _isInitialized = true;
     }
 
-    public ValueTask<bool> PredictRain(float[] features, CancellationToken cancellationToken = default)
+    public ValueTask<bool> PredictRainAsync(float[] features, CancellationToken cancellationToken = default)
     {
         if (!_isInitialized || _classifierSession is null)
             throw new InvalidOperationException("Model is not loaded");
@@ -58,7 +58,7 @@ public class OnnxWeatherPredictionService : IWeatherPredictionService, IDisposab
         return ValueTask.FromResult(prediction == 1);
     }
 
-    public ValueTask<float> PredictMaxTemperature(float[] features, CancellationToken cancellationToken = default)
+    public ValueTask<float> PredictMaxTemperatureAsync(float[] features, CancellationToken cancellationToken = default)
     {
         if (!_isInitialized || _regressorSession is null)
             throw new InvalidOperationException("Model is not loaded");

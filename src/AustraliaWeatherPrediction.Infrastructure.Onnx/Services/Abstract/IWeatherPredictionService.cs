@@ -4,7 +4,7 @@ public interface IWeatherPredictionService
 {
     Task InitializeAsync();
     
-    ValueTask<bool> PredictRain(float[] features, CancellationToken cancellationToken = default);
+    ValueTask<bool> PredictRainAsync(float[] features, CancellationToken cancellationToken = default);
     
-    ValueTask<float> PredictMaxTemperature(float[] features, CancellationToken cancellationToken = default);
+    ValueTask<float> PredictMaxTemperatureAsync(float[] features, CancellationToken cancellationToken = default);
 }

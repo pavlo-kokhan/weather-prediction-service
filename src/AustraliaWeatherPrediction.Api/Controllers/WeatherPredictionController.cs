@@ -21,7 +21,7 @@ public class WeatherPredictionController : ControllerBase
     [HttpPost("rain")]
     public async Task<IActionResult> GetRainPredictionAsync([FromBody] RainPredictionRequest request, CancellationToken cancellationToken)
     {
-        var prediction = await _weatherPredictionService.PredictRain(request.ToFeatureArray(), cancellationToken);
+        var prediction = await _weatherPredictionService.PredictRainAsync(request.ToFeatureArray(), cancellationToken);
 
         var response = new RainPredictionResponse(
             prediction,
@@ -34,7 +34,7 @@ public class WeatherPredictionController : ControllerBase
     [HttpPost("max-temperature")]
     public async Task<IActionResult> GetMaxTemperaturePredictionAsync([FromBody] MaxTemperaturePredictionRequest request, CancellationToken cancellationToken)
     {
-        var maxTemperature = await _weatherPredictionService.PredictMaxTemperature(request.ToFeatureArray(), cancellationToken);
+        var maxTemperature = await _weatherPredictionService.PredictMaxTemperatureAsync(request.ToFeatureArray(), cancellationToken);
 
         var response = new MaxTemperaturePredictionResponse(
             maxTemperature,
