@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/AustraliaWeatherPrediction.Api/AustraliaWeatherPrediction.Api.csproj" />
+  <Project Path="src/AustraliaWeatherPrediction.Infrastructure.Onnx/AustraliaWeatherPrediction.Infrastructure.Onnx.csproj" />
+</Solution>

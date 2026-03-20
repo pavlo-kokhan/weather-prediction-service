@@ -1,0 +1,11 @@
+{
+  "minTemp": 13.4,
+  "maxTemp": 22.9,
+  "rainfall": 0.6,
+  "windGustSpeed": 44.0,
+  "humidity9am": 71.0,
+  "humidity3pm": 22.0,
+  "pressure9am": 1007.7,
+  "pressure3pm": 1007.1,
+  "rainToday": 0
+}
