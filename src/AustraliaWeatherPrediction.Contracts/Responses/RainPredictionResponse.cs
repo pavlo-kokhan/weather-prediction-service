@@ -1,4 +1,4 @@
-﻿namespace AustraliaWeatherPrediction.Api.Application.Responses;
+﻿namespace AustraliaWeatherPrediction.Contracts.Responses;
 
 public record RainPredictionResponse(
     bool Prediction,

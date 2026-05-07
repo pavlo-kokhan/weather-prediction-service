@@ -1,4 +1,4 @@
-﻿namespace AustraliaWeatherPrediction.Api.Application.Requests;
+﻿namespace AustraliaWeatherPrediction.Contracts.Requests;
 
 public record RainPredictionRequest(
     float MinTemp,

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AustraliaWeatherPrediction.Api.Application.Responses;
+﻿namespace AustraliaWeatherPrediction.Contracts.Responses.Common;
 
 public record ErrorResponse(
     string Message,

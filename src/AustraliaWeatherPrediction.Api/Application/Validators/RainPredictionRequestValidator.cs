@@ -1,4 +1,4 @@
-﻿using AustraliaWeatherPrediction.Api.Application.Requests;
+﻿using AustraliaWeatherPrediction.Contracts.Requests;
 using FluentValidation;
 
 namespace AustraliaWeatherPrediction.Api.Application.Validators;
